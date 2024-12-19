@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Profiles</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="flex">
+<div class="profile">
+    <div class="container1">
+        <h1>Alumni Profiles</h1>
+        
+        <!-- Domain Filter -->
+        <div class="domain-filter">
+            <label for="domain">Select Domain:</label>
+            <select id="domain">
+                <option value="all">All Domains</option>
+                <option value="Web Development">Web Development</option>
+                <option value="AI">AI</option>
+                <option value="Data Science">Data Science</option>
+            </select>
+        </div>
+
+        <!-- Alumni List -->
+        <div class="alumni-list" id="alumni-list">
+            <!-- Profile Names will go here -->
+        </div>
+    </div>
+
+    <!-- Profile Details (Right Corner) -->
+    <div class="profile-details" id="profile-details">
+        <div class="content-box" id="contentBox">
+            <button class="close-button" id="closeButton">X</button>
+        </div>
+        <h3>Profile Details</h3>
+        <img id="profile-img" src="" alt="Profile Image" />
+        <p id="profile-name"></p>
+        <p id="profile-birthplace"></p>
+        <p id="profile-contact"></p>
+        <p id="profile-education"></p>
+        <p id="profile-about"></p>
+        <h4>Domain Experience</h4>
+        <p id="profile-domain-experience"></p>
+        
+        <!-- Chat Box -->
+        <div class="chatbox">
+            <h4>Chat with Alumni</h4>
+            <textarea id="chat-box" placeholder="Type a message..." rows="4" cols="30"></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+</div>
+
+<div class="container2">
+    <h1>Find Your Alumni Match</h1>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <label for="student-domain">Select Your Domain:</label>
+        <select id="student-domain">
+            <option value="Web Development">Web Development</option>
+            <option value="AI">AI</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+
+        <label for="student-location">Enter Your Location:</label>
+        <input type="text" id="student-location" placeholder="e.g., Chennai">
+
+        <label for="student-interests">Your Interests (comma-separated):</label>
+        <input type="text" id="student-interests" placeholder="e.g., HTML, JavaScript">
+
+        <button id="match-btn">Find Matches</button>
+    </div>
+
+    <!-- Match Results -->
+    <div id="match-results" class="results-section">
+        <h2>Match Results</h2>
+        <div id="matches"></div>
+    </div>
+</div>
+    </div>
+<script src="profile.js"></script>
+</body>
+</html>

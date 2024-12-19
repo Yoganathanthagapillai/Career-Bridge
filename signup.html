@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Digital Alumni Engagement Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bodybg">
+    <div id="app">
+        <h1>Create Your Account</h1>
+        
+        <!-- Sign Up Form -->
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+            
+            <!-- Role Selection (Alumni or Student) -->
+            <div class="role-selection">
+                <label>
+                    <input type="radio" name="role" value="Student" required /> Student
+                </label>
+                <label>
+                    <input type="radio" name="role" value="Alumni" required /> Alumni
+                </label>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <p class="link">Already have an account? <a href="index.html">Login</a></p>
+        <p id="message"></p>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

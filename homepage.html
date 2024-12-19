@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Alumni Engagement Platform - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Alumni Connect</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#forum">Forum</a></li>
+            <li><a href="profil.html">Profile</a></li>
+            <li><a href="index.html" class="login-btn">Log Out</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <h1>Welcome to the Digital Alumni Engagement Platform</h1>
+        <p>Connecting students with alumni for mentorship, networking, and career growth.</p>
+        <a href="#about" class="cta-btn">Learn More</a>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>This platform bridges the gap between college alumni and current students, providing a space for mentorship, networking, and meaningful interactions.</p>
+    </section>
+    <!-- Events Section -->
+    <section id="events" class="content-section">
+        <h2>Upcoming Events</h2>
+        <button id="add-event-btn" class="add-btn">+ Add Event</button>
+        <form id="event-form" class="hidden">
+            <label for="event-title">Event Title:</label>
+            <input type="text" id="event-title" placeholder="Enter event title" required>
+            <label for="event-date">Date:</label>
+            <input type="date" id="event-date" required>
+            <label for="event-location">Location:</label>
+            <input type="text" id="event-location" placeholder="Enter event location" required>
+            <label for="event-details">Details:</label>
+            <textarea id="event-details" placeholder="Enter additional information"></textarea>
+            <button type="button" id="submit-event-btn">Submit</button>
+        </form>
+        <div class="event-list" id="event-list">
+            <!-- Dynamically added events will appear here -->
+        </div>
+    </section>
+    <!-- Forum Section -->
+    <section id="forum" class="content-section">
+        <h2>Community Forum</h2>
+        <p>Join discussions, ask questions, and share knowledge with other alumni and students.</p>
+        <a href="profil.html" class="cta-btn">Go to Forum</a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Digital Alumni Engagement Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
